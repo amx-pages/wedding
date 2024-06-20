@@ -4,7 +4,7 @@ import Dual from "../Assets/love-dual.png"
 import Pranay from "../Assets/pranay.jpeg"
 
 const Family = () => {
-    return <div className="family-container">
+    return <div>
         <section id="family-section">
             <div className="family">
                 <div className="family-content">
@@ -35,7 +35,7 @@ const Family = () => {
                                 </div>
                                 <div class="fam-text">
                                     <p class="text5 tecen cred">Name</p>
-                                    <p class="text4 tecen">Bride Relation</p>
+                                    <p class="text4 tecen">Sanya Relation</p>
                                 </div>
                             </div>
                             <div class="div-members">
@@ -45,7 +45,7 @@ const Family = () => {
                                 </div>
                                 <div class="fam-text">
                                     <p class="text5 tecen cred">Name</p>
-                                    <p class="text4 tecen">Bride Relation</p>
+                                    <p class="text4 tecen">Sanya Relation</p>
                                 </div>
                             </div>
                             <div class="div-members">
@@ -55,7 +55,7 @@ const Family = () => {
                                 </div>
                                 <div class="fam-text">
                                     <p class="text5 tecen cred">Name</p>
-                                    <p class="text4 tecen">Bride Relation</p>
+                                    <p class="text4 tecen">Sofiya Relation</p>
                                 </div>
                             </div>
                             <div class="div-members">
@@ -65,7 +65,7 @@ const Family = () => {
                                 </div>
                                 <div class="fam-text">
                                     <p class="text5 tecen cred">Name</p>
-                                    <p class="text4 tecen">Bride Relation</p>
+                                    <p class="text4 tecen">Sofiya Relation</p>
                                 </div>
                             </div>
                         </div>

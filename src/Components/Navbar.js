@@ -13,6 +13,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import HourglassBottomIcon from '@mui/icons-material/HourglassBottom';
 import Diversity1Icon from '@mui/icons-material/Diversity1';
+import EventIcon from '@mui/icons-material/Event';
 import HowToRegIcon from '@mui/icons-material/HowToReg';
 
 const Navbar = () => {
@@ -52,9 +53,14 @@ const Navbar = () => {
             id: "family-section"
         },
         {
-            text: "Reception",
+            text: "Event",
+            icon: <EventIcon />,
+            id: "event-section"
+        },
+        {
+            text: "Message",
             icon: <HowToRegIcon />,
-            id: "reception-section"
+            id: "message-section"
         },
     ];
 
@@ -66,7 +72,6 @@ const Navbar = () => {
                         {item.text}
                     </a>
                 ))}
-                <button className="primary-button">Bookings Now</button>
             </div>
             <div className="navbar-menu-container">
                 <HiOutlineBars3 onClick={() => setOpenMenu(true)} />

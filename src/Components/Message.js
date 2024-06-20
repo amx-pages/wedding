@@ -2,16 +2,16 @@ import React from "react";
 import Bird from "../Assets/bird.png"
 import Dual from "../Assets/love-dual.png"
 
-const Reception = () => {
-    return <div className="home-container">
-            <section id="reception-section">
-            <div className="reception">
-                <div className="reception-content">
-                    <div className="div-reception">
+const Message = () => {
+    return <div>
+            <section id="message-section">
+            <div className="message">
+                <div className="message-content">
+                    <div className="div-message">
                         <div class="div-title">
                             <div class="title-top-icon"><img src={Bird} alt=""/></div>
                             <div class="title-text-div">
-                                <p class="font-title cblack">Reception</p>
+                                <p class="font-title cblack">Message</p>
                             </div>
                             <div class="title-bottom-icon"><img src={Dual} alt=""/></div>
                         </div>
@@ -39,4 +39,4 @@ const Reception = () => {
         </div>;
 };
 
-export default Reception;
+export default Message;

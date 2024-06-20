@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/wedding/static/css/main.339622e0.css",
+    "main.js": "/wedding/static/js/main.8ecbbdf1.js",
+    "static/media/pranay.jpeg": "/wedding/static/media/pranay.83a2b4c28ef1656f8e91.jpeg",
+    "static/media/map.png": "/wedding/static/media/map.d4a23794f69166048907.png",
+    "static/media/bg_round.png": "/wedding/static/media/bg_round.3e8277fdf0586fc12a1f.png",
+    "static/media/bg_down.png": "/wedding/static/media/bg_down.8da4feafcef71aa8e83f.png",
+    "static/media/bg_left.png": "/wedding/static/media/bg_left.d4274bfa317b2a92d118.png",
+    "static/media/bg_up.png": "/wedding/static/media/bg_up.130e3e3b24b57341b3ba.png",
+    "static/media/love-dual.png": "/wedding/static/media/love-dual.8190eb1133afcfd728a4.png",
+    "static/media/bird.png": "/wedding/static/media/bird.35f288d231ec453b750b.png",
+    "static/media/love.png": "/wedding/static/media/love.86b7019a41260c82265c.png",
+    "static/media/scrollbar.png": "/wedding/static/media/scrollbar.86b7019a41260c82265c.png",
+    "static/media/bg.png": "/wedding/static/media/bg.7348f83778ec5d47fcd6.png",
+    "static/media/gan.png": "/wedding/static/media/gan.44fc121b5fc546c8e3e7.png",
+    "index.html": "/wedding/index.html",
+    "main.339622e0.css.map": "/wedding/static/css/main.339622e0.css.map",
+    "main.8ecbbdf1.js.map": "/wedding/static/js/main.8ecbbdf1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.339622e0.css",
+    "static/js/main.8ecbbdf1.js"
+  ]
+}

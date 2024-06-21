@@ -63,25 +63,20 @@ const Countdown = () => {
                     <div className="countdown-content">
                         <div className="div-count">
                             <p className="invitation">
-                                {!countdownFinished && <span className="disSMBM">Wedding Invitation</span>}
-                                {countdownFinished && <span className="disAMar">We are Family now</span>}
+                                {!countdownFinished && <span className="disSMBM">Приглашение на свадьбу</span>}
+                                {countdownFinished && <span className="disAMar">Мы теперь семья</span>}
                             </p>
                             <div className="con-pat">
                                 <div className="left cwhite text-center">
-                                    <p className="text5 disBMar">We invite you to the wedding of</p>
-                                    <p className="BG-nam">Sanya &nbsp;&nbsp;<img src={Gan} alt=""/>&nbsp; Sofiya</p>
+                                    <p className="text4">Приглашаем вас на свадьбу</p>
+                                    <p className="BG-nam">Александра <img src={Gan} alt=""/> Софии&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                    <p className="text4">в</p>
+                                    <p className="text4">Пятницу, 30 Августа, 2024 года в 14:00</p>
                                     <br/>
-                                    <p className="text5">
-                                        <span className="disBMar">on</span>
-                                    </p>
-                                    <p className="text6">Pyatnica, 30<sup>th</sup> Aug, 2024 at 14:20 p.m</p>
-                                    <p className="text5">
-                                        <span className="disBMar"><br/><br/><br/></span>
-                                    </p>
-                                    <p className="text4"><i className="fa-solid fa-location-dot"></i> &nbsp;&nbsp; L.B Convention, Beside S.R.R Function Hall, Nirmal Road, Bhainsa</p>
+                                    <p className="text3"><i className="fa-solid fa-location-dot"></i> &nbsp;&nbsp; Тихвинская, 11/16, Великий Новгород, Новгородская обл., 173001</p>
                                     <br/>
-                                    <div className="flex-row disBMar">
-                                        <a href="https://wa.me/917680904589">
+                                    <div className="flex-row">
+                                        <a href="https://maps.app.goo.gl/Zx6ATFoF6jEn1r6d9">
                                             <div className="but-map">
                                                 <div className="but-map-lay flex-row">
                                                     <div className="flex-row">
@@ -97,28 +92,28 @@ const Countdown = () => {
                                 </div>
                                 <div className="right">
                                     <p className="text5 cwhite text-center">
-                                        <span className="disBMar">We are left with</span>
+                                        <span className="disBMar">Свадьба состоится через</span>
                                     </p>
                                     <div id="div-con-tim">
                                         <div className="div-com">
                                             <div className="tim-val"><p>{years}</p></div>
-                                            <div className="tim-val-nam"><p>Years</p></div>
+                                            <div className="tim-val-nam"><p>Годы</p></div>
                                         </div>
                                         <div className="div-com">
                                             <div className="tim-val"><p>{days}</p></div>
-                                            <div className="tim-val-nam"><p>Days</p></div>
+                                            <div className="tim-val-nam"><p>Дни</p></div>
                                         </div>
                                         <div className="div-com">
                                             <div className="tim-val"><p>{hours}</p></div>
-                                            <div className="tim-val-nam"><p>Hours</p></div>
+                                            <div className="tim-val-nam"><p>Часы</p></div>
                                         </div>
                                         <div className="div-com">
                                             <div className="tim-val"><p>{minutes}</p></div>
-                                            <div className="tim-val-nam"><p>Minutes</p></div>
+                                            <div className="tim-val-nam"><p>Минуты</p></div>
                                         </div>
                                         <div className="div-com">
                                             <div className="tim-val"><p>{seconds}</p></div>
-                                            <div className="tim-val-nam"><p>Seconds</p></div>
+                                            <div className="tim-val-nam"><p>Секунды</p></div>
                                         </div>
                                     </div>
                                 </div>

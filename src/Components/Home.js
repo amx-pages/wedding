@@ -4,17 +4,17 @@ import Dual from "../Assets/love-dual.png";
 
 const Home = () => {
     const [marriageDate] = useState(new Date("2024-08-30T14:20:00"));
-    const [registrationDeadline] = useState(new Date("2024-08-25T14:20:00"));
+    const [registrationDeadline] = useState(new Date("2024-08-22T14:20:00"));
 
     const handleSaveDateClick = () => {
         const currentDate = new Date();
 
         if (currentDate < registrationDeadline)
-            {alert("Save the date!");}
+            {alert("Пройти опрос");}
         else if (currentDate >= registrationDeadline && currentDate < marriageDate)
-            {alert("Registration finished. You can still contact us for more details.");}
+            {alert("Регистрация завершена. Вы все еще можете связаться с нами для получения более подробной информации. Для контактов перейдите в конец страницы.");}
         else
-            {alert("The ceremony date has passed. Registration is closed.");}
+            {alert("Дата церемонии прошла. Регистрация закрыта.");}
         // Redirect to Google Form after the alert is closed
         window.location.href = "https://forms.google.com/your-google-form-link";
     };
@@ -27,26 +27,26 @@ const Home = () => {
                         <div className="div-home">         
                             <div className="home-title">
                                 <div className="home-bro">
-                                    <p className="bro-title">Sanya</p>
+                                    <p className="bro-title">Александр</p>
                                 </div>
                                 <div className="home-symbol">
                                     <img src={Love} alt="Love Symbol" className="love"/>
                                 </div>
                                 <div className="home-gro">
-                                    <p className="gro-title">Sofiya</p>
+                                    <p className="gro-title">София</p>
                                 </div>
                             </div>
-                            <p className="home-get-text text-center">
+                            <p className="home-get-text text-center text5">
                                 {marriageDate < new Date() && (
-                                    <span className="disAMar">Have got married</span>
+                                    <span className="disAMar">Поженились</span>
                                 )}
                                 {marriageDate >= new Date() && (
-                                    <span className="disBMar">are getting married</span>
+                                    <span className="disBMar">скоро поженимся</span>
                                 )}
                             </p>
                             <div className="home-date">
                                 <div className="home-date-title">
-                                    <p className="home-date-text text-center">30<sup>th</sup> Aug, 2024 14:20 p.m</p>
+                                    <p className="home-date-text text-center text7 cwhite">30 Aвгуста, 2024 14:00</p>
                                 </div>
                                 <div className="home-symbol-dual"><img src={Dual} alt="love-dual"/></div>
                             </div>
@@ -54,7 +54,7 @@ const Home = () => {
                                 <div className="button disBMar" onClick={handleSaveDateClick}>
                                     <div className="layer"></div>
                                     <div className="tex flex-col">
-                                        <h4>Save the Date</h4>
+                                        <h4>Нажми на меня</h4>
                                     </div>
                                 </div>
                             )}

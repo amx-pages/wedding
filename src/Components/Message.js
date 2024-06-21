@@ -11,7 +11,7 @@ const Message = () => {
                         <div class="div-title">
                             <div class="title-top-icon"><img src={Bird} alt=""/></div>
                             <div class="title-text-div">
-                                <p class="font-title cblack">Message</p>
+                                <p class="font-title text6 cwhite">Message</p>
                             </div>
                             <div class="title-bottom-icon"><img src={Dual} alt=""/></div>
                         </div>

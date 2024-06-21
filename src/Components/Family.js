@@ -11,7 +11,7 @@ const Family = () => {
                     <div className="div-title">
                         <div class="title-top-icon"><img src={Bird} alt=""/></div>
                         <div class="title-text-div">
-                            <p class="font-title cblack">Family</p>
+                            <p class="font-title text6 cwhite">Семья</p>
                         </div>
                         <div class="title-bottom-icon"><img src={Dual} alt=""/></div>
                     </div>
@@ -25,7 +25,6 @@ const Family = () => {
                             <div class="cir-card-bottom"></div>
                         </div>
                     </div>
-                    <br/>
                     <div className="div-family">
                         <div className="family-members">
                             <div class="div-members">
@@ -34,8 +33,8 @@ const Family = () => {
                                     <div class="cir-card-bottom"></div>
                                 </div>
                                 <div class="fam-text">
-                                    <p class="text5 tecen cred">Name</p>
-                                    <p class="text4 tecen">Sanya Relation</p>
+                                    <p class="text5 tecen cred">Александр</p>
+                                    <p class="text4 tecen">Викторович Слесарев</p>
                                 </div>
                             </div>
                             <div class="div-members">
@@ -44,8 +43,8 @@ const Family = () => {
                                     <div class="cir-card-bottom"></div>
                                 </div>
                                 <div class="fam-text">
-                                    <p class="text5 tecen cred">Name</p>
-                                    <p class="text4 tecen">Sanya Relation</p>
+                                    <p class="text5 tecen cred">Надежда</p>
+                                    <p class="text4 tecen">Анатольевна Слесарева</p>
                                 </div>
                             </div>
                             <div class="div-members">
@@ -54,8 +53,8 @@ const Family = () => {
                                     <div class="cir-card-bottom"></div>
                                 </div>
                                 <div class="fam-text">
-                                    <p class="text5 tecen cred">Name</p>
-                                    <p class="text4 tecen">Sofiya Relation</p>
+                                    <p class="text5 tecen cred">Александр</p>
+                                    <p class="text4 tecen">Сергеевич Зыков</p>
                                 </div>
                             </div>
                             <div class="div-members">
@@ -64,8 +63,8 @@ const Family = () => {
                                     <div class="cir-card-bottom"></div>
                                 </div>
                                 <div class="fam-text">
-                                    <p class="text5 tecen cred">Name</p>
-                                    <p class="text4 tecen">Sofiya Relation</p>
+                                    <p class="text5 tecen cred">Светлана</p>
+                                    <p class="text4 tecen">Владимировна Пюнненен</p>
                                 </div>
                             </div>
                         </div>

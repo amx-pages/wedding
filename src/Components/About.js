@@ -16,12 +16,12 @@ const About = () => {
             </div>
             <div class="about-div">
                 <div class="about-text at-right">
-                    <p class="text7 cred folav">Sanya</p>
-                    <p class="text5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. deserunt rerum consectetur dolore! Vero, quaerat. Magni?</p>
+                    <p class="text7 cred folav">Александр</p>
+                    <p class="text4">Холодная зима. Медведь бродит по лесу, иногда останавливается, стучится головой о дерево и кричит: «Ну зачем, зачем я выпил столько кофе!?»</p>
                 </div>
                 <div class="about-text">
-                    <p class="text7 cred folav">Sofiya</p>
-                    <p class="text5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. deserunt rerum consectetur dolore! Vero, quaerat. Magni?</p>
+                    <p class="text7 cred folav">София</p>
+                    <p class="text4">Поймав в красивом прыжке букет невесты, она обратила на себя внимание футбольного менеджера, который искал хорошего вратаря.</p>
                 </div>
             </div>
         </section>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import {
     Box,
@@ -15,13 +15,10 @@ import HourglassBottomIcon from '@mui/icons-material/HourglassBottom';
 import Diversity1Icon from '@mui/icons-material/Diversity1';
 import EventIcon from '@mui/icons-material/Event';
 import HowToRegIcon from '@mui/icons-material/HowToReg';
+import ContactSupport from '@mui/icons-material/ContactSupport';
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false);
-
-    const handleCloseDrawer = () => {
-        setOpenMenu(false);
-    };
 
     const scrollToSection = (id) => {
         const element = document.getElementById(id);
@@ -33,50 +30,50 @@ const Navbar = () => {
 
     const menuOptions = [
         {
-            text: "Home",
+            text: "Главная",
             icon: <HomeIcon />,
             id: "home-section"
         },
         {
-            text: "About",
+            text: "Про нас",
             icon: <InfoIcon />,
             id: "about-section"
         },
         {
-            text: "Countdown",
+            text: "Обратный отчёт",
             icon: <HourglassBottomIcon />,
             id: "countdown-section"
         },
         {
-            text: "Family",
+            text: "Семья",
             icon: <Diversity1Icon />,
             id: "family-section"
         },
         {
-            text: "Event",
+            text: "Мероприятие",
             icon: <EventIcon />,
             id: "event-section"
         },
         {
-            text: "Message",
+            text: "Пожелания",
             icon: <HowToRegIcon />,
             id: "message-section"
+        },
+        {
+            text: "Помощь",
+            icon: <ContactSupport />,
+            id: "footer-section"
         },
     ];
 
     return (
         <nav>
-            <div className="navbar-links-container">
-                {menuOptions.map((item) => (
-                    <a key={item.text} onClick={() => scrollToSection(item.id)}>
-                        {item.text}
-                    </a>
-                ))}
-            </div>
-            <div className="navbar-menu-container">
+            <div className="navbar-sticky-button">
                 <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
             </div>
-            <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
+
+            {/* Drawer for mobile view */}
+            <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="left">
                 <Box
                     sx={{ width: 250 }}
                     role="presentation"

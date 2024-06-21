@@ -5,10 +5,10 @@ import Dual from "../Assets/love-dual.png"
 const About = () => {
     return <div class="event">
         <section id="event-section">
-                <div class="div-title">
+                <div class="div-title cwhite">
                     <div class="title-top-icon"><img src={Bird} alt=""/></div>
                     <div class="title-text-div">
-                        <p class="font-title cblack">Wedding Events</p>
+                        <p class="font-title text6 cblack">Мероприятие</p>
                     </div>
                     <div class="title-bottom-icon"><img src={Dual} alt=""/></div>
                 </div>

@@ -65,6 +65,10 @@
   font-weight: bold;
   font-size: 1vmin;
 }
+.text2 {
+  font-weight: bold;
+  font-size: 2vmin;
+}
 .text3 {
   font-weight: bold;
   font-size: 3vmin;
@@ -108,7 +112,6 @@
   font-size: 2.5rem;
   cursor: pointer;
 }
-
 
 /* HOME */
 
@@ -266,6 +269,9 @@
   align-items: center;
   padding: 6vh 5vw;
 }
+#about-section{
+  width: 100%;
+}
 .div-about {
   margin-top: 3vmin;
   position: relative;
@@ -314,7 +320,7 @@
   justify-content: space-evenly;
 }
 .about-text {
-  width: 35%;
+  width: 55%;
   color: var(--black);
   padding: 12px;
   font-size: 20%;
@@ -589,14 +595,14 @@
 .div-event {
   margin-top: 3vmin;
   display: flex;
-  justify-content: center;
+  justify-content:center;
   flex-direction: row;
-  align-items: center;
+  align-items:flex-start;
   flex-shrink: 0;
   flex-grow: 0;
 }
 .event-date {
-  width: 45%;
+  width: 55%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -761,7 +767,7 @@ textarea:focus::placeholder {
 
 /* Responsivity */
 
-@media screen and (min-width: 769px) and (max-width:1024px) and (orientation: landscape) {}
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {}
 
 @media screen and (max-width: 1200px) {
     .con-pat {
@@ -769,15 +775,12 @@ textarea:focus::placeholder {
         flex-direction: column;
         justify-content: center;
     }
-    .con-pat .left {
-        width: 80vw;
-        margin-bottom: 3vmin;
-    }
-    .con-pat .right {
+    .con-pat .left, .con-pat .right {
         width: 80vw;
         margin-bottom: 3vmin;
     }
 }
+
 @media screen and (max-width: 1024px) {
     .title-top-icon {
         height: 75px;
@@ -790,6 +793,7 @@ textarea:focus::placeholder {
         width: 80%;
     }
 }
+
 @media screen and (max-width: 768px) {
     .title-top-icon {
         height: 60px;
@@ -803,12 +807,13 @@ textarea:focus::placeholder {
     .footer-section-columns {margin: 1rem 0rem;}
     .footer-section-one {display: none;}
     .footer-section-two {
-      flex-direction: column;
-      margin-top: 2rem;
-      text-align: center;
-      font-size: 30px;
+        flex-direction: column;
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 30px;
     }
 }
+
 @media screen and (orientation: portrait) {
     .about,
     .countdown-content,
@@ -828,10 +833,6 @@ textarea:focus::placeholder {
         flex-grow: 0;
     }
     .div-home {width: 90vw;}
-    .home-title {
-        height: 45vh;
-        width: 80vw;
-    }
     .home-title {
         position: relative;
         height: 45vh;
@@ -860,14 +861,7 @@ textarea:focus::placeholder {
     .tim-val {font-size: 6vmax;}
     .tim-val-nam {font-size: 3vmax;}
 }
-@media screen and (orientation: portrait) and (max-width: 768px) {
-    .text2 {font-size: 2vmax;}
-    .text3 {font-size: 3vmax;}
-    .text4 {font-size: 4vmax;}
-    .text5 {font-size: 5vmax;}
-    .text6 {font-size: 6vmax;}
-    .text7 {font-size: 7vmax;}
-}
+
 @media screen and (orientation: portrait) and (max-width: 768px) {
     .text2 {font-size: 2vmax;}
     .text3 {font-size: 3vmax;}
@@ -878,16 +872,18 @@ textarea:focus::placeholder {
     .about .text7 {font-size: 5vmax;}
     .about .text5 {font-size: 3.5vmax;}
 }
+
 @media screen and (orientation: portrait) and (max-width: 480px) {
-    .text2 {font-size: 2vmax;}
-    .text3 {font-size: 3vmax;}
-    .text4 {font-size: 3vmax;}
-    .text5 {font-size: 4vmax;}
-    .text6 {font-size: 5vmax;}
-    .text7 {font-size: 5.5vmax;}
-    .about .text7 {font-size: 4.5vmax;}
-    .about .text5 {font-size: 3vmax;}
+    .text2 {font-size: 1vmax;}
+    .text3 {font-size: 2vmax;}
+    .text4 {font-size: 2vmax;}
+    .text5 {font-size: 3vmax;}
+    .text6 {font-size: 1vmax;}
+    .text7 {font-size: 4.5vmax;}
+    .about .text7 {font-size: 3.5vmax;}
+    .about .text5 {font-size: 2vmax;}
 }
+
 @media screen and (max-width: 400px) {
     .button {
         height: 20vmin;
@@ -908,6 +904,7 @@ textarea:focus::placeholder {
         height: 100vmin;
     }
 }
+
 @media screen and (max-width: 350px) {
     .but-map {
         height: 20vmin;
@@ -926,6 +923,7 @@ textarea:focus::placeholder {
         width: 12vmin;
     }
 }
+
 @media screen and (max-width: 900px) {
     .home-content {
         background: rgba(0, 0, 0, 0.5);
@@ -962,12 +960,12 @@ textarea:focus::placeholder {
     .home-date-text {font-size: 4vmax;}
     .home-get-text {font-size: 5vmax;}
     .bro-title {
-      font-size: 10vh;
-      padding-bottom: 90px;
+        font-size: 10vh;
+        padding-bottom: 90px;
     }
     .gro-title {
-      font-size: 10vh;
-      padding-top: 90px;
+        font-size: 10vh;
+        padding-top: 90px;
     }
     .button {font-size: 3vh;}
     .about-text {width: 100%;}

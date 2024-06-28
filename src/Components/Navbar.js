@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import {
     Box,

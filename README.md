@@ -11,9 +11,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Install scripts
 
 ### `npm install`
+### `npm install emailjs-com`
 ### `npm install react-icons --save`
 ### `npm install @mui/material @emotion/react @emotion/styled`
-
 
 In the project directory, you can run:
 

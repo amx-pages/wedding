@@ -1,5 +1,6 @@
 import React from "react";
-import Pranay from "../Assets/pranay.jpeg"
+import Wife from "../Assets/wife.jpeg"
+import Husband from "../Assets/husband.jpeg"
 import Love from "../Assets/love.png";
 
 const About = () => {
@@ -7,8 +8,8 @@ const About = () => {
         <section id="about-section">
             <div class="div-about text-center">
                 <div class="photo-main">
-                    <div class="photo-sub"><img src={Pranay} alt=""/></div>
-                    <div class="photo-sub"><img src={Pranay} alt=""/></div>
+                    <div class="photo-sub wife"><img src={Wife} alt=""/></div>
+                    <div class="photo-sub husband"><img src={Husband} alt=""/></div>
                 </div>
                 <div class="photo-hover">
                     <div class="photo-sub"><img src={Love} alt=""/></div>
@@ -23,7 +24,7 @@ const About = () => {
                     <p class="text3">Телосложение - упитанность отсутствует</p>
                     <p class="text3">Возраст - вечно молодой</p>
                     <p class="text3">Ум - светлый</p>
-                    <p class="text3">Глаза - голубые о хитрым оттенков</p>
+                    <p class="text3">Глаза - голубые с хитрым оттенков</p>
                     <p class="text3">Волосы - свои</p>
                 </div>
                 <div class="about-text">

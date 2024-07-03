@@ -1,6 +1,7 @@
 import React from "react";
 import Bird from "../Assets/bird.png";
 import Dual from "../Assets/love-dual.png"
+import Map from "../Assets/map.png";
 
 const About = () => {
     return <div class="event">
@@ -22,17 +23,31 @@ const About = () => {
                         <p class="text2 text-center"><i class="fa-solid fa-location-dot"></i> &nbsp;&nbsp; Начало бракосочетания</p>
                         <p class="text3 text-center"><i class="fa-solid fa-clock"></i> &nbsp;&nbsp; 14:20</p>
                         <p class="event-text">Покидаем здание ЗАГСа .</p>
-                    </div>
-                    <div className="event-date">
                         <p class="text5 cred text-center">Прогулка</p>
                         <p class="text2 text-center"><i class="fa-solid fa-location-dot"></i> &nbsp;&nbsp; Софийская набережная</p>
                         <p class="text3 text-center"><i class="fa-solid fa-clock"></i> &nbsp;&nbsp; 15:00</p>
+                    </div>
+                    <div className="event-date">
                         <p class="text5 cred text-center">Место торжества</p>
                         <p class="text2 text-center"><i class="fa-solid fa-location-dot"></i> &nbsp;&nbsp; Новгородский район, деревня Стрелка, улица Береговая 1Б</p>
                         <p class="text3 text-center"><i class="fa-solid fa-clock"></i> &nbsp;&nbsp; 16:00</p>
+                        <div className="flex-row">
+                            <a href="https://maps.app.goo.gl/BJx6yZmSuiAdhZkY7">
+                                <div className="but-map">
+                                    <div className="but-map-lay flex-row">
+                                        <div className="flex-row">
+                                            <div><img src={Map} alt=""/></div>
+                                            <div>
+                                                <p className="tex">Google Maps</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                         <p class="text2 text-center"><i class="fa-solid fa-location-dot"></i> &nbsp;&nbsp; Прибытие на место и размещение в доме</p>
                         <p class="text3 text-center"><i class="fa-solid fa-clock"></i> &nbsp;&nbsp; 16:30</p>
-                        <p class="text2 text-center"><i class="fa-solid fa-location-dot"></i> &nbsp;&nbsp; Начало праздничного банкета</p>
+                        <p class="event-text"><i class="fa-solid fa-location-dot"></i> &nbsp;&nbsp; Начало праздничного банкета</p>
                         <p class="text3 text-center"><i class="fa-solid fa-clock"></i> &nbsp;&nbsp; 17:00</p>
                     </div>
                 </div>

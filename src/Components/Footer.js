@@ -1,6 +1,6 @@
 import React from "react";
-import { BsYoutube } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
+import { FaTelegram } from "react-icons/fa";
+import { SlSocialVkontakte } from "react-icons/sl";
 
 const Footer = () => {
     return <div className="footer-wrapper">
@@ -8,20 +8,18 @@ const Footer = () => {
             <div className="footer-content">
                 <div className="footer-section-one">
                     <div className="footer-icons">
-                        <BsYoutube/>
-                        <FaFacebookF/>
+                    <a href="https://web.telegram.org/k/#@The_Black_Monk95" target="_blank" rel="noopener noreferrer"><FaTelegram /></a>
+                    <a href="https://vk.com/the_black_monk" target="_blank" rel="noopener noreferrer"><SlSocialVkontakte /></a>
                     </div>
                 </div>
                 <div className="footer-section-two">
                     <div className="footer-section-columns">
-                        <span>Quality</span>
-                        <span>Help</span>
-                        <span>Share</span>
+                        <span>Александр</span>
+                        <span>+79622400533</span>
                     </div>
                     <div className="footer-section-columns">
-                        <span>123-456-789</span>
-                        <span>Aramxxx8691</span>
-                        <span>email@email.com</span>
+                        <span>София</span>
+                        <span>+79969398367</span>
                     </div>
                     <div className="footer-section-columns">
                         <span>Privacy Policy</span>

@@ -16,7 +16,7 @@ const Home = () => {
         else
             {alert("Дата церемонии прошла. Регистрация закрыта.");}
         // Redirect to Google Form after the alert is closed
-        window.location.href = "https://forms.google.com/your-google-form-link";
+        window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSfKeVvBOAhYxP_jCQAXkGzZFwpon0uhGLgzXo2XfUdoLADO8g/viewform?usp=sf_link";
     };
 
     return (

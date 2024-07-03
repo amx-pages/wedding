@@ -1,42 +1,68 @@
-import React from "react";
-import Bird from "../Assets/bird.png"
-import Dual from "../Assets/love-dual.png"
+import React, { useRef } from "react";
+import emailjs from 'emailjs-com';
+import Bird from "../Assets/bird.png";
+import Dual from "../Assets/love-dual.png";
 
 const Message = () => {
-    return <div>
+    const formRef = useRef(null);
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            process.env.REACT_APP_EMAILJS_SERVICE_ID,
+            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+            e.target,
+            process.env.REACT_APP_EMAILJS_USER_ID
+        )
+        .then((result) => {
+            console.log(result.text);
+            alert("Message sent successfully!");
+            formRef.current.reset();
+        }, (error) => {
+            console.log(error.text);
+            alert("Failed to send the message, please try again.");
+        });
+    };
+
+    const handleSubmit = () => {
+        if (formRef.current) {
+            formRef.current.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
+        }
+    };
+
+    return (
+        <div>
             <section id="message-section">
-            <div className="message">
-                <div className="message-content">
-                    <div className="div-message">
-                        <div class="div-title">
-                            <div class="title-top-icon"><img src={Bird} alt=""/></div>
-                            <div class="title-text-div">
-                                <p class="font-title text6 cwhite">Message</p>
+                <div className="message">
+                    <div className="message-content">
+                        <div className="div-message">
+                            <div className="div-title">
+                                <div className="title-top-icon"><img src={Bird} alt=""/></div>
+                                <div className="title-text-div">
+                                    <p className="font-title text6 cwhite">Пожелание</p>
+                                </div>
+                                <div className="title-bottom-icon"><img src={Dual} alt=""/></div>
                             </div>
-                            <div class="title-bottom-icon"><img src={Dual} alt=""/></div>
+                            <br/><br/><br/>
                         </div>
-                        <br/><br/><br/>
-                    </div>
-                    <div className="div-form">
-                        <form id="Message_form" name="contactform" autocomplete="off" action="" onsubmit="return validateform()" method="POST">
-                            <input class="form" type="text" id="fname" name="name" placeholder="Your name" required/>
-                            <textarea class="form form-h" id="fmessage" name="message" placeholder="Message you wish to convey to the couple"></textarea>
-                            <input type="hidden" name="_next" value=""/>
-                            <input type="hidden" name="_subject" value="New submission"/>
-                            <input type="hidden" name="_cc" value="bkkvarun24@gmail.com"/>
-                            <input type="hidden" name="_template" value="table"/>
-                        </form>
-                        <div class="button" onclick="submit_form()">
-                            <div class="layer"></div>
-                            <div class="tex flex-col">
-                                <h4>Submit</h4>
+                        <div className="div-form">
+                            <form id="Message_form" name="contactform" autoComplete="off" onSubmit={sendEmail} ref={formRef}>
+                                <input className="form" type="text" id="fname" name="from_name" placeholder="Ваше имя" required/>
+                                <textarea className="form form-h" id="fmessage" name="message" placeholder="Сообщение, которое вы хотите передать паре"></textarea>
+                            </form>
+                            <div className="button" onClick={handleSubmit}>
+                                <div className="layer"></div>
+                                <div className="tex flex-col">
+                                    <h4>Пожелать</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
             </section>
-        </div>;
+        </div>
+    );
 };
 
 export default Message;

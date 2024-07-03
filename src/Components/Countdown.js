@@ -69,7 +69,7 @@ const Countdown = () => {
                             <div className="con-pat">
                                 <div className="left cwhite text-center">
                                     <p className="text4">Приглашаем вас на свадьбу</p>
-                                    <p className="BG-nam">Александра <img src={Gan} alt=""/> Софии&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                    <p className="BG-nam">Софии <img src={Gan} alt=""/> Александра&nbsp;&nbsp;&nbsp;&nbsp;</p>
                                     <p className="text4">в</p>
                                     <p className="text4">Пятницу, 30 Августа, 2024 года в 14:00</p>
                                     <br/>

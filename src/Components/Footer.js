@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="footer-content">
                 <div className="footer-section-one">
                     <div className="footer-icons">
-                    <a href="https://web.telegram.org/k/#@The_Black_Monk95" target="_blank" rel="noopener noreferrer"><FaTelegram /></a>
+                    <a href="https://t.me/The_Black_Monk95" target="_blank" rel="noopener noreferrer"><FaTelegram /></a>
                     <a href="https://vk.com/the_black_monk" target="_blank" rel="noopener noreferrer"><SlSocialVkontakte /></a>
                     </div>
                 </div>

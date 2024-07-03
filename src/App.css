@@ -524,6 +524,7 @@
   max-width: 250px;
   max-height: 250px;
 }
+
 .cir-div-card:hover .cir-card-bottom {
   background-color: var(--red);
 }
@@ -549,6 +550,8 @@
   width: 100%;
   height: 100%;
 }
+.wife_mother {transform: scale(1.2) translate(-4px, -13px);}
+.wife_father {object-position: center 40%;}
 .cir-card-bottom {
   position: absolute;
   width: 100%;

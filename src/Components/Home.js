@@ -27,13 +27,13 @@ const Home = () => {
                         <div className="div-home">         
                             <div className="home-title">
                                 <div className="home-bro">
-                                    <p className="bro-title">Александр</p>
+                                    <p className="bro-title">София</p>
                                 </div>
                                 <div className="home-symbol">
                                     <img src={Love} alt="Love Symbol" className="love"/>
                                 </div>
                                 <div className="home-gro">
-                                    <p className="gro-title">София</p>
+                                    <p className="gro-title">Александр</p>
                                 </div>
                             </div>
                             <p className="home-get-text text-center text5">
@@ -41,7 +41,7 @@ const Home = () => {
                                     <span className="disAMar">Поженились</span>
                                 )}
                                 {marriageDate >= new Date() && (
-                                    <span className="disBMar">скоро поженимся</span>
+                                    <span className="disBMar">скоро поженятся</span>
                                 )}
                             </p>
                             <div className="home-date">

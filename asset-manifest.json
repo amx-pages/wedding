@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wedding/static/css/main.3285241d.css",
-    "main.js": "/wedding/static/js/main.b4740ce1.js",
+    "main.css": "/wedding/static/css/main.65d48f6f.css",
+    "main.js": "/wedding/static/js/main.df0e8b4c.js",
     "static/media/husband.jpeg": "/wedding/static/media/husband.2f23118c66efaf3e25f2.jpeg",
     "static/media/wife.jpeg": "/wedding/static/media/wife.a768d0e8d1af3a11a0c5.jpeg",
     "static/media/pranay.jpeg": "/wedding/static/media/pranay.83a2b4c28ef1656f8e91.jpeg",
@@ -11,17 +11,18 @@
     "static/media/bg_left.png": "/wedding/static/media/bg_left.d4274bfa317b2a92d118.png",
     "static/media/bg_up.png": "/wedding/static/media/bg_up.130e3e3b24b57341b3ba.png",
     "static/media/love-dual.png": "/wedding/static/media/love-dual.8190eb1133afcfd728a4.png",
+    "static/media/wife_mother.jpeg": "/wedding/static/media/wife_mother.f87bcffe839285ba1685.jpeg",
     "static/media/bird.png": "/wedding/static/media/bird.35f288d231ec453b750b.png",
     "static/media/love.png": "/wedding/static/media/love.86b7019a41260c82265c.png",
     "static/media/scrollbar.png": "/wedding/static/media/scrollbar.86b7019a41260c82265c.png",
     "static/media/bg.png": "/wedding/static/media/bg.7348f83778ec5d47fcd6.png",
     "static/media/gan.png": "/wedding/static/media/gan.44fc121b5fc546c8e3e7.png",
     "index.html": "/wedding/index.html",
-    "main.3285241d.css.map": "/wedding/static/css/main.3285241d.css.map",
-    "main.b4740ce1.js.map": "/wedding/static/js/main.b4740ce1.js.map"
+    "main.65d48f6f.css.map": "/wedding/static/css/main.65d48f6f.css.map",
+    "main.df0e8b4c.js.map": "/wedding/static/js/main.df0e8b4c.js.map"
   },
   "entrypoints": [
-    "static/css/main.3285241d.css",
-    "static/js/main.b4740ce1.js"
+    "static/css/main.65d48f6f.css",
+    "static/js/main.df0e8b4c.js"
   ]
 }

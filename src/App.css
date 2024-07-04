@@ -3,18 +3,16 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
 .App {
   min-height: 100vh;
   max-width: auto;
   margin: 0rem auto;
   }
-  
-  body {
+a {text-decoration: none;}
+body {
   font-family: 'Bad Script';
   background: url(Assets/bg.png) repeat;
 }
-
 :root {
   --red: #f0394d;
   --lred: #fa4753;
@@ -22,28 +20,23 @@
   --black: #17181c;
   --blue: #98A5C9;
 }
-
 ::-webkit-scrollbar {
   width: 10px;
   padding: 20px 0px;
 }
-
 ::-webkit-scrollbar-track {
   background: white;
 }
-
 ::-webkit-scrollbar-thumb {
   background: transparent;
   background: url(Assets/scrollbar.png) repeat center;
   background-size: 100%;
 }
-
 .text-center {text-align: center;}
 .cred {color: var(--red) !important;}
 .cblack {color: var(--black) !important;}
 .cwhite {color: var(--white) !important;}
 .folav {font-family: 'Great Vibes', cursive;}
-
 .flex-col {
   display: flex;
   flex-direction: column;
@@ -52,7 +45,6 @@
   flex-shrink: 0;
   flex-grow: 0;
 }
-
 .flex-row {
   display: flex;
   justify-content: center;
@@ -269,9 +261,7 @@
   align-items: center;
   padding: 6vh 5vw;
 }
-#about-section{
-  width: 100%;
-}
+#about-section{width: 100%;}
 .div-about {
   margin-top: 3vmin;
   position: relative;
@@ -330,14 +320,12 @@
   margin-top: 6px;
   margin-bottom: 16px;
 }
-.at-right{
-  text-align: right;
-}
+.at-right{text-align: right;}
 
 /* COUNTDIWN */
 
 .countdown {
-  background: url(Assets/bg_left.png) no-repeat center;
+  background: url(Assets/bg_up.png) no-repeat center;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -496,7 +484,7 @@
 /* FAMILY */
 
 .family {
-  background: url(Assets/bg_round.png) no-repeat center;
+  background: url(Assets/bg_down.png) no-repeat center;
   background-size: cover;
 }
 .family-content {
@@ -524,34 +512,26 @@
   max-width: 250px;
   max-height: 250px;
 }
-
-.cir-div-card:hover .cir-card-bottom {
-  background-color: var(--red);
-}
-.cir-div-card:hover .cir-card-top {
-  transform: scale(1.02);
-}
-.car-man .active .cir-card-bottom {
-  background-color: var(--red);
-}
-.car-man .active .cir-card-top {
-  transform: scale(1.02);
-}
+.cir-div-card:hover .cir-card-bottom {background-color: var(--red);}
+.cir-div-card:hover .cir-card-top {transform: scale(1.02);}
+.car-man .active .cir-card-bottom {background-color: var(--red);}
+.car-man .active .cir-card-top {transform: scale(1.02);}
 .cir-card-top {
-  position: absolute;
   width: 100%;
   height: 100%;
   z-index: 1;
   border-radius: 50%;
   transition: all 0.3s linear;
   overflow: hidden;
+  position: absolute;
 }
 .cir-card-top img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
-.wife_mother {transform: scale(1.2) translate(-4px, -13px);}
-.wife_father {object-position: center 40%;}
+.wife_mother {transform: scale(2) translate(8px, 50px);}
+.wife_father {object-position: center 2%;}
 .cir-card-bottom {
   position: absolute;
   width: 100%;
@@ -631,7 +611,7 @@
 /* Message */
 
 .message {
-  background: url(Assets/bg_down.png) no-repeat center;
+  background: url(Assets/bg_round.png) no-repeat center;
   background-size: cover;
 }
 .message-content {
@@ -732,7 +712,6 @@ textarea:focus::placeholder {
   min-width: 190px;
 }
 .footer-section-columns span {
-  margin: 0.25rem 0rem;
   font-weight: 600;
   color: #4c4c4c;
   cursor: pointer;
@@ -769,6 +748,7 @@ textarea:focus::placeholder {
   border-bottom: 2px solid var(--red);
 }
 .font-title {
+  font-size: 6vmax;
   margin: 1px 0px;
   border-top: 2px solid var(--red);
   border-bottom: 2px solid var(--red);
@@ -813,12 +793,18 @@ textarea:focus::placeholder {
     .font-title {font-size: 6vmax;}
     .nav-logo-container {max-width: 140px;}
     .navbar-sticky-button svg {font-size: 1.5rem;}
-    .footer-content {justify-content: center;}
+    .footer-content {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;}
+    .footer-icons svg {
+      font-size: 3rem;
+      margin: 0.5em;
+    }
     .footer-section-columns {margin: 1rem 0rem;}
-    .footer-section-one {display: none;}
+    .footer-section-one {display:flex;}
     .footer-section-two {
         flex-direction: column;
-        margin-top: 2rem;
         text-align: center;
         font-size: 30px;
     }
@@ -884,7 +870,7 @@ textarea:focus::placeholder {
 }
 
 @media screen and (orientation: portrait) and (max-width: 480px) {
-    .text2 {font-size: 1vmax;}
+    .text2 {font-size: 2vmax;}
     .text3 {font-size: 2vmax;}
     .text4 {font-size: 2vmax;}
     .text5 {font-size: 3vmax;}

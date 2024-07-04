@@ -9,7 +9,7 @@ const About = () => {
                 <div class="div-title cwhite">
                     <div class="title-top-icon"><img src={Bird} alt=""/></div>
                     <div class="title-text-div">
-                        <p class="font-title text6 cblack">План мероприятия</p>
+                        <p class="font-title cblack">План мероприятия</p>
                     </div>
                     <div class="title-bottom-icon"><img src={Dual} alt=""/></div>
                 </div>
@@ -33,7 +33,7 @@ const About = () => {
                         <p class="text3 text-center"><i class="fa-solid fa-clock"></i> &nbsp;&nbsp; 16:00</p>
                         <div className="flex-row">
                             <a href="https://maps.app.goo.gl/BJx6yZmSuiAdhZkY7">
-                                <div className="but-map">
+                                <div className="but-map" href="https://maps.app.goo.gl/BJx6yZmSuiAdhZkY7">
                                     <div className="but-map-lay flex-row">
                                         <div className="flex-row">
                                             <div><img src={Map} alt=""/></div>
@@ -45,6 +45,7 @@ const About = () => {
                                 </div>
                             </a>
                         </div>
+                        <br/>
                         <p class="text2 text-center"><i class="fa-solid fa-location-dot"></i> &nbsp;&nbsp; Прибытие на место и размещение в доме</p>
                         <p class="text3 text-center"><i class="fa-solid fa-clock"></i> &nbsp;&nbsp; 16:30</p>
                         <p class="event-text"><i class="fa-solid fa-location-dot"></i> &nbsp;&nbsp; Начало праздничного банкета</p>

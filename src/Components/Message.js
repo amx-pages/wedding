@@ -40,7 +40,7 @@ const Message = () => {
                             <div className="div-title">
                                 <div className="title-top-icon"><img src={Bird} alt=""/></div>
                                 <div className="title-text-div">
-                                    <p className="font-title text6 cwhite">Пожелание</p>
+                                    <p className="font-title cwhite">Пожелание</p>
                                 </div>
                                 <div className="title-bottom-icon"><img src={Dual} alt=""/></div>
                             </div>

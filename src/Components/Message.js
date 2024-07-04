@@ -49,7 +49,7 @@ const Message = () => {
                         <div className="div-form">
                             <form id="Message_form" name="contactform" autoComplete="off" onSubmit={sendEmail} ref={formRef}>
                                 <input className="form" type="text" id="fname" name="from_name" placeholder="Ваше имя" required/>
-                                <textarea className="form form-h" id="fmessage" name="message" placeholder="Сообщение, которое вы хотите передать паре"></textarea>
+                                <textarea className="form form-h" id="fmessage" name="message" placeholder="Если вы, по каким-либо причинам, не сможете присутствовать, вы можете оставить пожелание для молодожёнов."></textarea>
                             </form>
                             <div className="button" onClick={handleSubmit}>
                                 <div className="layer"></div>

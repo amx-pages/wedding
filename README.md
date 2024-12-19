@@ -1,6 +1,6 @@
 # Visit site
 
-Open [link](https://aramxxx8691.github.io/wedding/)
+Open [link](https://amx-pages.github.io/wedding/)
 
 # Getting Started with Create React App
 
